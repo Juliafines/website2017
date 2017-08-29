@@ -1,0 +1,242 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: "Proxima Nova" !important;
+  background-color: #f0f0f0 !important;
+
+}
+
+/*typical wrapper width: 960px*/
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  /* top right bottom left for margins */
+}
+
+/*------jumbotron-------*/
+section .jumbotron {
+  top: 15px;
+  position: relative;
+  background-color: #5FB0E5;
+  color: #fff;
+  border-bottom: 20px solid #fff;
+  margin-bottom: 25px;
+}
+
+/*-------columns: testing, does this work? if not, delete!----------*/
+.box {
+  top: 25px;
+  position: relative;
+  background: #fff;
+  display: table;
+  border-radius: 6px;
+}
+
+.box .box-row {
+  display: table-row;
+  border-radius: 6px;
+}
+
+.box .box-row .box-cell {
+  display: table-cell;
+  width: 25%;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.box .box-row .box-cell.box1 {
+  background-color: #5FB0E5;
+  color: #fff;
+  border-radius: 6px;
+  border-bottom: 20px solid #fff;
+}
+
+.box .box-row .box-cell.box2 {
+  background-color: #fff;
+  color: #5FB0E5;
+  border-radius: 6px;
+  border-bottom: 20px solid #fff;
+}
+
+/*------img---------*/
+img {
+  width: 97%;
+  max-width: 400px;
+  border-radius: 6px;
+}
+
+.pic-left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .5s ease-in-out;
+  margin-left: 10px;
+  background: rgba(95, 176, 229, .9);
+}
+
+.pic-middle-left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .5s ease-in-out;
+  margin-left: 13.5px;
+  margin-right: 13.5px;
+}
+
+.pic-middle-right {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .5s ease-in-out;
+  margin-right: 16.5px;
+  margin-left: 16.5px;
+}
+
+.pic-right {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .25s ease-in-out;
+  text-align: right;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.pic-left:hover, .pic-middle-left:hover,
+.pic-middle-right:hover, .pic-right:hover {
+  width: 100%;
+  background:none;
+}
+
+.pic-left:before, .pic-right:before,
+.pic-middle-right:before, .pic-middle-left:before {
+  background: rgba(95, 176, 229, .9);
+}
+
+.pic-left:after, .pic-right:after,
+.pic-middle-right:after, .pic-middle-left:after {
+  background: rgba(95, 176, 229, .9);
+}
+
+/*-----columns and rows------*/
+.row {
+  width: 960px;
+  height: 242px;
+}
+
+/*-----header----------*/
+.header {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+header ul {
+  margin: 0;
+  padding: 15px 0;
+  text-align: right;
+}
+
+header ul li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  color: #D3D3D3;
+  font-size: 15px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header ul li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+}
+
+header ul li a {
+  color: #D3D3D3;
+}
+
+header ul li a:hover {
+  color: #5FB0E5;
+  text-decoration: none;
+}
+
+header ul li:hover {
+  color: #5FB0E5;
+  text-decoration: none;
+}
+
+/*-----footer-------*/
+
+.footer {
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer ul li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  color: #D3D3D3;
+  font-size: 25px;
+  z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+footer ul li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f0f0f0;
+  z-index: -1;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: .3s ease-in-out;
+}
+
+footer ul li:hover:before {
+  transform: scale(.9);
+}
+
+footer ul li:hover .fa {
+  color: #ffffff;
+}
+
+footer ul li a {
+  color: #D3D3D3;
+  display: block;
+}
