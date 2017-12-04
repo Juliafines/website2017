@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <title>Home</title>
@@ -28,23 +28,194 @@
       </header>
   </div>
 
-  <div class="about">
+<div class="who-we-are">
+  <div class="container-fluid">
     <div class="row">
-
-      <div class="col-6">
-     <img src="images/newmem.jpg" class="img-rounded" alt="New Members">
+      <div class="col-sm-4" id="left">
+        <h4>Design</h4>
+      </div>
+      <div class="col-sm-4" id="middle">
+        <h4>Develop</h4>
+      </div>
+      <div class="col-sm-4" id="right">
+        <h4>Launch</h4>
+      </div>
     </div>
-    <div class="col-6">
-    <h4>About Us</h4>
-    <p>Open Web is an app incubator club founded in 2014...</p>
+    <div class="section">
+      <h4>Biweekly Spotlight</h4>
     </div>
   </div>
 </div>
+
+
+<!------ not working carousel
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="my-slider" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#my-slider" data-slide-to="1"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <img src="images/desktop.png" alt="desk" />
+                  <div class="carousel-caption">
+                      <h5>Mah tester</h5>
+                    </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/newmem.jpg" alt="desk" />
+                      <div class="carousel-caption">
+                          <h5>Mah tester</h5>
+                        </div>
+                      </div>
+                </div>
+
+                <a class="left carousel-control" href="my-slider" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="right carousel-control" href="my-slider" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+        </div>
+      </div>
+    </div>
+  </div> ------>
+
+  <div class="section">
+    <h4>Featured Projects</h4>
   </div>
-  <div class="spotlight">
-    <h4>Biweekly Spotlight</h4>
+  <div id="projects">
   </div>
 
+<div class="section">
+  <h4>Upcoming Workshops</h4>
+</div>
+  <div id="workshops">
+    <p>Below is the carousel example copied from the Bootstrap documentation.</p>
+
+    <div id='carousel-example-generic' class='carousel slide' data-ride='carousel'>
+        <!-- Indicators -->
+        <ol class='carousel-indicators'>
+            <li data-target='#carousel-example-generic' data-slide-to='0' class='active'></li>
+            <li data-target='#carousel-example-generic' data-slide-to='1'></li>
+            <li data-target='#carousel-example-generic' data-slide-to='2'></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class='carousel-inner'>
+            <div class='item active'>
+                <img src='http://placehold.it/400x200&text=slide1' alt='' />
+            </div>
+            <div class='item'>
+                <img src='http://placehold.it/400x200&text=slide2' alt='' />
+            </div>
+            <div class='item'>
+                <img src='http://placehold.it/400x200&text=slide3' alt='' />
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class='left carousel-control' href='#carousel-example-generic' data-slide='prev'>
+            <span class='glyphicon glyphicon-chevron-left'></span>
+        </a>
+        <a class='right carousel-control' href='#carousel-example-generic' data-slide='next'>
+            <span class='glyphicon glyphicon-chevron-right'></span>
+        </a>
+    </div>
+
+    <p>Below is an altered example that shows the indicators as thumbnails in a scrollable strip. This was accomplished with two markup changes and some CSS changes.</p>
+
+    <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+        <div class='carousel-outer'>
+            <!-- Wrapper for slides -->
+            <div class='carousel-inner'>
+                <div class='item active'>
+                    <img src='http://placehold.it/400x200&text=slide1' alt='' />
+                </div>
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide2' alt='' />
+                </div>
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide3' alt='' />
+                </div>
+
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide4' alt='' />
+                </div>
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide5' alt='' />
+                </div>
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide6' alt='' />
+                </div>
+
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide7' alt='' />
+                </div>
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide8' alt='' />
+                </div>
+                <div class='item'>
+                    <img src='http://placehold.it/400x200&text=slide9' alt='' />
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+                <span class='glyphicon glyphicon-chevron-left'></span>
+            </a>
+            <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+                <span class='glyphicon glyphicon-chevron-right'></span>
+            </a>
+        </div>
+
+        <!-- Indicators -->
+        <ol class='carousel-indicators'>
+            <li data-target='#carousel-custom' data-slide-to='0' class='active'><img src='http://placehold.it/100x50&text=slide1' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='1'><img src='http://placehold.it/100x50&text=slide2' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='2'><img src='http://placehold.it/100x50&text=slide3' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='3'><img src='http://placehold.it/100x50&text=slide4' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='4'><img src='http://placehold.it/100x50&text=slide5' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='5'><img src='http://placehold.it/100x50&text=slide6' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='6'><img src='http://placehold.it/100x50&text=slide7' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='7'><img src='http://placehold.it/100x50&text=slide8' alt='' /></li>
+            <li data-target='#carousel-custom' data-slide-to='8'><img src='http://placehold.it/100x50&text=slide9' alt='' /></li>
+        </ol>
+    </div>
+
+    <h4>Markup Changes</h4>
+    <p>First thing the indicators ordered list is moved to be beneath the controls and slides from its usual spot above.</p>
+    <p>Then the controls and slides are wrapped in a div given the class name "carousel-outer".</p>
+
+    <h4>CSS Changes</h4>
+    <p>Many changes were made to the CSS to override the standard Bootstrap CSS.</p>
+    <p>The indicators ordered list was made to have a static position so that it would display beneath the slides as intended. Then properties for overflow, text-align, white-space, and width were changed to make it a scrollable element that fits nicely at the bottom.</p>
+    <p>Each list item in this list were changed solely for behavior in that they don't necessarily change based on the "active" class being applied to them as the slides transition. For this example it wasn't needed but you can experiment with if something is needed.</p>
+    <p>We make sure our images will be displayed as block to maintain size and spacing as we wish. The images are sized placeholders to there's no sizing set within the img elements nor the CSS. This may be needed depending on your implementation.</p>
+    <p>Then, for our new "carousel-outer" class we set the position property to relative. The reason for this, and the sole reason this div exists, is to force the left/right controls to set their height appropriately. Without this div and property the left/right controls would expand downward into the thumbnails below.</p>
+
+  
+  </div>
+
+<!-----section header------>
+<div class="section">
+  <h4>Partners</h4>
+</div>
+
+<!-----partners section----->
+  <div class="partner">
+
+  <a href="http://typeboost.io" target="_blank">Typeboost</a>
+  </div>
+
+<!-----footer------->
   <footer class="footer">
     <div class="wrapper">
       <ul>
@@ -57,4 +228,9 @@
   </footer>
 
 </body>
+<!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
