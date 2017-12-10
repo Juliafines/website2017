@@ -95,6 +95,16 @@ p {
   color: #27aae1;
 }
 
+#left h4, #middle h4, #right h4 {
+  text-align: center;
+  font-size: 75px;
+}
+
+.col-sm-4 .glyphicon {
+  font-size: 100px;
+  padding-top: 25px;
+}
+
 /*use blue gray for font h1 etc*/
 
 #middle {
@@ -113,22 +123,24 @@ p {
 }
 /*-----carousel-------*/
 
-/*h4 {
-    margin: 20px 10px 10px;
+.carousel-indicators img {
+  width: 100px;
+  height: 50px;
 }
 
-p {
-    margin: 10px;
-}*/
-
+#spotlight #carousel-custom {
+  margin: 20px auto;
+  width: 25%;
+  height: 25%;
+}
 #carousel-example-generic {
     margin: 20px auto;
-    width: 400px;
+    width: 60%;
 }
 
 #carousel-custom {
     margin: 20px auto;
-    width: 400px;
+    width: 60%;
 }
 #carousel-custom .carousel-indicators {
     margin: 10px 0 0;
@@ -149,16 +161,21 @@ p {
 }
 #carousel-custom .carousel-indicators li img {
     display: block;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 #carousel-custom .carousel-indicators li.active img {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 #carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
+    /*opacity: 0.75;*/
 }
 #carousel-custom .carousel-outer {
     position: relative;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none !important;
+  background-repeat: none !important;
 }
 
 /*------section headers-------*/
