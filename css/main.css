@@ -130,9 +130,15 @@ p {
 
 #spotlight #carousel-custom {
   margin: 20px auto;
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
 }
+
+#spotlight #carousel-custom .carousel-indicators img {
+  width: 40px !important;
+  height: 40px !important;
+}
+
 #carousel-example-generic {
     margin: 20px auto;
     width: 60%;
