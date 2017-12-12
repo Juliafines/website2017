@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--use latest rendering engine>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     <title>Projects</title>
+
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+     <link rel="stylesheet" href="proj.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style type = "text/css">
+
+h1{
+font-size: 5em;
+  bottom: 50%;
+  right: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+    </style>
+
+  </head>
+
+  <body>
+
+<div class="container">
+
+<header class="header">
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="about.html">About<a></li>
+          <li><a href="project.html">Projects<a></li>
+          <li><a href="members.html">Members<a></li>
+          <li><a href="resource.html">Resources<a></li>
+          <li><a href="workshop.html">Workshops<a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span>Project name</span></h4>
+        </div>
+        <div class="modal-body">
+          <img src=project1.jpg alt="sample1"/> 
+          <p>Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. Some text in the modal. </p>
+        </div>
+        <div class="modal-footer-single" style="height: 100px">
+              <a href="http://openwebbu.org/"><p>linktoproject.org<p></a>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+
+
+<div id="header" class="container" style="text-align: left; padding-bottom: 30px; padding-top: 20px">
+    <h1>Projects</h1>      
+  </div>
+
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <figure class="card">
+			<img src=project1.jpg alt="sample1"/>	
+			<div class="icons">
+				<a href="#"><i class="buttonMy" data-toggle="modal" data-target="#myModal">Read more</i></a>
+			</div>
+			<figcaption>
+				<h2><span>PROJECT NAME</span></h2> 
+				<p>Here come a short describtion and the author's name</p>
+			</figcaption>	
+		</figure>
+		<script>
+		$("figure").mouseleave(
+		  function () {
+		    $(this).removeClass("hover");
+		  }
+		);
+		</script>
+      </div>
+
+      <div class="item">
+        <figure class="card">
+			<img src=project2.png alt="sample1"/>	
+			<div class="icons">
+				<a href="#"><i class="buttonMy" data-toggle="modal" data-target="#myModal">Read more</i></a>
+			</div>
+			<figcaption>
+				<h2><span>Project Name</span></h2> 
+				<p>Here come a short describtion and the author's name</p>
+			</figcaption>	
+		</figure>
+		<script>
+		$("figure").mouseleave(
+		  function () {
+		    $(this).removeClass("hover");
+		  }
+		);
+		</script>
+      </div>
+    
+      <div class="item">
+        <figure class="card">
+			<img src=project3.png alt="sample1"/>	
+			<div class="icons">
+				<a href="#"><i class="buttonMy" data-toggle="modal" data-target="#myModal">Read more</i></a>
+			</div>
+			<figcaption>
+				<h2><span>PROJECT NAME</span></h2> 
+				<p>Here come a short describtion and the author's name</p>
+			</figcaption>	
+		</figure>
+		<script>
+		$("figure").mouseleave(
+		  function () {
+		    $(this).removeClass("hover");
+		  }
+		);
+		</script>
+      </div>
+
+      <div class="item">
+        <figure class="card">
+			<img src=project4.jpg alt="sample1"/>	
+			<div class="icons">
+				<a href="#"><i class="buttonMy" data-toggle="modal" data-target="#myModal">Read more</i></a>
+			</div>
+			<figcaption>
+				<h2><span>PROJECT NAME</span></h2> 
+				<p>Here come a short describtion and the author's name</p>
+			</figcaption>	
+		</figure>
+		<script>
+		$("figure").mouseleave(
+		  function () {
+		    $(this).removeClass("hover");
+		  }
+		);
+		</script>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+		
+<!--footer-->
+  <footer class="footer">
+    <div class="wrapper">
+      <ul>
+        <li><a href="https://www.facebook.com/openwebbu/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/openwebbu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/9184257/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:openweb@bu.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                       
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!--javascriptFile -->
+  </body>
+
+</html>
+

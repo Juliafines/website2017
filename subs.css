@@ -1,0 +1,361 @@
+	body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'proxima', Proxima Nova Alt Refular, sans-serif;
+
+    background-image: url("bgBlur.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*-----header----------*/
+.header {
+  width: 100%;
+
+  position: relative;
+}
+
+header ul {
+  margin: 0;
+  padding: 15px 0;
+  text-align: left;
+}
+
+header ul li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  color: #D3D3D3;
+  font-size: 15px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header ul li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+header ul li a {
+  color: #D3D3D3;
+}
+
+header ul li a:hover {
+  color: #5FB0E5;
+  text-decoration: none;
+}
+
+header ul li:hover {
+  color: #5FB0E5;
+  text-decoration: none;
+}
+
+
+
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+    font-family: 'proxima', Proxima Nova Alt Refular, sans-serif;
+}
+
+.modal {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.modal-header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.modal-header h4{
+  font-family: 'proxima', Proxima Nova Alt Refular, sans-serif;
+  font-size: 2em;
+  bottom: 50%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.modal-header h2, .modal-header p{
+  font-family: 'proxima', Proxima Nova Alt Refular, sans-serif;
+  margin: 0;
+  color: #000000;
+  text-align: right;
+  position: absolute;
+}
+
+.modal-body p{
+  font-family: 'proxima', Proxima Nova Alt Refular, sans-serif;
+  font-size: 1.3em;
+  bottom: 50%;
+  font-weight: 300;
+  
+}
+
+.modal-header span{
+  font-weight: 800;
+}
+
+.modal-body > img{
+  width: 100%;
+}
+
+/*-----modal-footer-------*/
+
+.modal-footer {
+
+  background: #27aae1;
+}
+
+.modal-footer ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-footer ul li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  color: #D3D3D3;
+  font-size: 25px;
+  z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+.modal-footer ul li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f0f0f0;
+  z-index: -1;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: .3s ease-in-out;
+}
+
+.modal-footer ul li:hover:before {
+  transform: scale(.9);
+}
+
+.modal-footer ul li:hover .fa {
+  color: #ffffff;
+}
+
+.modal-footer ul li a {
+  color: #D3D3D3;
+  display: block;
+}
+
+
+figure.card {
+  font-family: 'proxima', Proxima Nova Alt Refular, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 480px;
+  max-height: 240px;
+  width: 100%;
+  background: #27aae1;
+}
+figure.card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.card > img {
+  margin-left: 50%;
+  opacity: 1;
+  width: 50%;
+  filter: blur(0px);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+figure.card figcaption {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+}
+figure.card figcaption h2,
+figure.card figcaption p {
+  margin: 0;
+  color: #000000;
+  text-align: right;
+  position: absolute;
+  padding: 10px 0 10px 0px;
+  margin: 0 40px 0 20px;
+}
+figure.card figcaption h2 {
+  font-size: 1.3em;
+  bottom: 50%;
+  right: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+figure.card figcaption h2 span {
+  font-weight: 800;
+}
+figure.card figcaption p {
+  top: 50%;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+figure.card .icons {
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding-left: 30px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+figure.card .icons i {
+  font-size: 10px;
+  padding: 10px;
+  color: black;
+  opacity: 0;
+  top: 50%;
+  display: inline-block;
+
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+figure.card:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: #27aae1;
+  content: '';
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+figure.card:hover > img,
+figure.card.hover > img {
+  opacity: 0.5;
+  filter: blur(5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.card:hover i,
+figure.card.hover i {
+  opacity: 0.8;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+
+.buttonMy{
+	background-color: #555555;
+	opacity: 0.8;
+	padding: 12px 24px;
+
+	font-size: 0.8em;
+  bottom: 50%;
+  right: 0;
+  
+  text-transform: uppercase;
+
+  color: black;
+}
+
+
+
+
+
+/*-----footer-------*/
+.footer {
+  width: 100%;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer ul li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  color: #D3D3D3;
+  font-size: 25px;
+  z-index: 1;
+  transition: .5s ease-in-out;
+}
+
+footer ul li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f0f0f0;
+  z-index: -1;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: .3s ease-in-out;
+}
+
+footer ul li:hover:before {
+  transform: scale(.9);
+}
+
+footer ul li:hover .fa {
+  color: #ffffff;
+}
+
+footer ul li a {
+  color: #D3D3D3;
+  display: block;
+}
